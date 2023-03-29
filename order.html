@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="order.css">
+<div class="main">
+	<h1>Place Your Order Here!</h1>
+	<form action="javascript:void(0);">
+		<fieldset>
+		<legend><div class="number">1</div> Your Info:</legend>
+		<label for="name">Name:</label><br>
+	<input type="text" id="name" name="user_name"><br>
+		<label for="mail">Email:</label><br>
+	<input type="email" id="mail" name="user_email"><br>
+		<label for="phone">Phone:</label><br>
+	<input type="tel" id="phone" name="user_tel"><br>
+		<label for="address">Address:</label><br>
+		<textarea></textarea>
+	</fieldset>
+	<fieldset>
+		<legend><div class="number">2</div> Breakfast:</legend>
+		<input type="checkbox" id="spaghetti" name="Buttermilk Pancakes"><label>Buttermilk Pancakes</label>
+		<input type="checkbox" id="penne" name="Country Delight"><label>Country Delight</label><br>
+		<input type="checkbox" id="glutenfree" name="Bacon Overflow"><label>Bacon overflow
+	</fieldset>
+	<fieldset>
+		<legend><div class="number">3</div> Lunch:</legend>
+		<input type="checkbox" id="Egg Attack" name="Egg Attack"><label>Egg Attack</label>
+		<input type="checkbox" id="American Classic" name="American Classic"><label>American Classic</label><br>
+	</fieldset>
+	<fieldset>
+		<legend><div class="number">4</div> Shakes:</legend>
+		<input type="checkbox" id="Godzilla Milkshake" name="Godzilla Milkshake"><label>Godzilla Milkshake</label>
+		<input type="checkbox" id="Oreo Dream" name="Oreo Dream"><label>Oreo Dream</label><br>
+		<input type="checkbox" id="Quarantine Buddy" name="Quarantine Buddy"><label>Quarantine Buddy</label>
+	</fieldset>
+	<fieldset>
+		<legend><div class="number">5</div> Dinner:</legend>
+		<input type="radio" id="Diner Double" name="Diner Double"><label>Diner Double</label>
+		<input type="radio" id="Steak Dinner" name="Steak Dinner"><label>Steak Dinner</label><br>
+	</fieldset>
+	<fieldset>
+	<legend><div class="number">6</div> Any Allergies/Special Requests:</legend>
+<textarea></textarea>
+</fieldset>
+<input class="button" type="submit" value="Give me Food!" onclick="submitForm()">
+</form>
+</div>
+<div class="order">
+	<h1>Thanks for your order!</h1>
+	<img src="https://i.imgur.com/O0oqbwc.jpg">
+</div>
+<body>
+	<script>
+		const submitForm = () => {
+	document.querySelector(".main").style.display="none";
+	document.querySelector(".order").style.display="block";
+};
+
+	</script>
+</body>
