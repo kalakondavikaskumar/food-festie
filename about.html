@@ -1,36 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-h1 {
-  color: blue;
-  font-family: verdana;
-  font-size: 200%;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
-p1 {
-  color: red;
-  font-family: courier;
-  font-size: 100%;
+
+html {
+  box-sizing: border-box;
 }
-p2 {
-  color: rgb(0, 64, 255);
-  font-family: courier;
-  font-size: 100%;
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
-p3 {
-  color: rgb(45, 160, 27);
-  font-family: courier;
-  font-size: 100%;
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
 </style>
 </head>
-<body>
+<body
+<div class="about-section">
 <h1>ABOUT OUR RESTAURANT</h1>
-<p1>***Our A restaurant is more than just a place to grab a bite to eat. 
-    **It’s an experience that can shape your day, or even your mood**.</p1> <br>
-<p2>Arvind restaurant offers a mix of delectable food, great service, and a welcoming ambiance.
+<p1>1. Our A restaurant is more than just a place to grab a bite to eat. 
+    It’s an experience that can shape your day, or even your mood.</p1> <br>
+  <br>
+<p2>2. Arvind restaurant offers a mix of delectable food, great service, and a welcoming ambiance.
 And restaurant with these qualities can turn an ordinary meal into an extraordinary experience</p2><br>
-<p3>Finally, a Arvind restaurant should offer excellent value for money While a high-end restaurant may charge more, it should always provide diners with an exceptional experience that justifies the cost. 
-    From portion sizes to presentation, a great restaurant should offer value in every aspect of the dining experience***</p3>
+  <br>
+<p3>3. Finally, a Arvind restaurant should offer excellent value for money While a high-end restaurant may charge more, it should always provide diners with an exceptional experience that justifies the cost. 
+    From portion sizes to presentation, a great restaurant should offer value in every aspect of the dining experience</p3>
+  
+</div>
 </body>
 </html>
