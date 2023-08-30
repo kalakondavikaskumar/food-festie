@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="index.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+  @keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.section-intro h1 {
+  animation: slideInLeft 1.5s ease-in-out;
+}
+
+</style>
 
     <title>Restaurant Website</title>
   </head>
@@ -35,13 +52,13 @@
   </nav>
 
 
-  <section class="section-intro">
-    <header>
-      <h1>Welcome to Vikas Restaurant</h1>
-    </header>
-    <div class="link-to-book-wrapper">
-    </div>
-  </section>
+ <section class="section-intro">
+  <header>
+    <h1 class="animated-heading">Welcome to Food FestyHub</h1>
+  </header>
+  <div class="link-to-book-wrapper">
+  </div>
+</section>
 
   <section class="about-section">
     <article>
@@ -89,7 +106,7 @@
         <h3>
           Make a booking
         </h3>
-      <form class="media-centered">
+     <form class="media-centered">
           <div class="form-group">
             <p>
               Please leave your number we will call to make a reservation
@@ -101,6 +118,7 @@
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+
       </div>
       <div class="opening-time">
         <h3>
